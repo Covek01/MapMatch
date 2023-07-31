@@ -1,0 +1,12 @@
+﻿global using MapMatchApi.Models;
+global using Microsoft.EntityFrameworkCore;
+global using MapMatchApi.Data;
+global using System.ComponentModel.DataAnnotations;
+global using MapMatchApi.DTOs;
+global using System.Linq;
+global using System.Security.Claims;
+global using Microsoft.IdentityModel.Tokens;
+global using MailKit.Net.Smtp;
+global using MimeKit;
+global using MimeKit.Text;
+global using MailKit.Security;

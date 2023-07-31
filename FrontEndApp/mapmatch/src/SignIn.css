@@ -1,0 +1,330 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.main-cont{
+  overflow: hidden !important;
+}
+.Main {
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  h5{
+    color: #314f4d;
+    font-family: 'Popins', sans-serif;
+  }
+  .status{
+    padding: 10px;
+    min-width: 200px;
+    border: dashed  #314f4d  2px;
+    color: #744833;
+    font-family: 'Popins', sans-serif;
+    borderRadius: 10px;
+    background-color: #b4aca3;
+    opacity: 0.8; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  .separator{
+    display: flex;
+    flex-direction: row;
+    
+  }
+   .group-name {
+    display: block;
+}
+
+@media (max-width: 300px) {
+    .group-name {
+        display: none; 
+    }
+}
+  .groupIcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .name-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+  .auth-form-container, .login-form, .register-form {
+    display: flex;
+    flex-direction: column; 
+    
+  }
+  .googleBtn{
+    display: flex;
+  align-items: center;
+ }
+ 
+ @media screen and (min-width: 600px) { 
+   .auth-form-container {
+     padding: 3rem;
+     border: 1px solid #dadcda;
+     border-radius: 10px;
+     margin: 0.5rem;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      opacity: 0.7;
+      background-color: #8ea490;
+    }
+  }
+  
+  label{
+    text-align: left;
+    padding: 0.25rem 0;
+  }
+  
+  input{
+    margin: 0.5rem 0;
+    height: 20px;
+    padding: 1 rem;
+    border: none;
+    border-radius: 10px;
+    text-indent: 7px;
+  }
+  
+.error-message{
+  color: #744833;
+}
+.costum-button{
+   background-color: #8ea490 !important;
+   color:  white !important;
+   border: solid 1px #dadcda ;
+   max-width: 160px;
+}
+.small-costum-button{
+  background-color:#dadcda  !important;
+  margin-top: 5px !important;; 
+  color:  #8ea490!important;
+  padding: 6px 8px;
+  font-size: 10px !important;; 
+}
+  .link-btn{
+    background: none;
+    color: #dadcda;
+    text-decoration: underline;
+    
+    
+  }
+  /* profil */
+  .main-profile{
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  }
+  .background-profile{
+    /* background-image: url('./Components/Sign-in/login-bg.jpg'); */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Set the height to 100% of viewport height */
+  background-color: #8ea490/* Your desired background color */;
+  z-index: -1; /* Move the background behind other content */
+  }
+  @media (max-width: 768px) {
+    .main-profile {
+      min-height: auto;
+      height: 100%;
+    }
+    
+    .background-profile {
+      height: auto;
+    }
+  }
+  .profil-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+  .popUpFriends{
+    background-color: #8ea490 !important; 
+    border-radius: 15px !important;
+    border: solid 1px white !important ;
+    opacity: 0.8 !important; /* Adjust the opacity value as per your preference (0.0 to 1.0) */
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+  }
+  .popUpFriends:hover{
+    opacity: 0.9 !important;
+  }
+  
+  .MuiPaper-rounded{
+    border-radius: 15px !important;
+  }
+  
+  .unfriendBtn{
+    background-color: #9fa5a6 !important;
+    color:  white !important;
+    border: solid 1px black !important ;
+    max-width: 160px;
+    margin-top: 5px !important;
+  }
+  .inviteCodeBtn{
+    border-top: none !important;
+    border-left: none !important;; 
+    border-right: none !important;
+    color: #314f4d !important;
+  }
+
+  .popup-container {
+    margin-top: 10px;
+    display: flex;
+    border: 1px solid #8ea490;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+.from-user{
+  
+  font-size: small;
+  font-weight: 200;
+  margin-left: 8px;
+}
+.chat{
+height: 870px;
+max-height: 870px;
+width: 40%;
+background-color: #F5F5F5;
+}
+.message-container-chat{
+  background-color: #F5F5F5;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 870px;
+  height: 94%;
+
+  overflow-y: scroll;
+  scrollbar-width: thin !important;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color:  #DCDCDC;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #314f4d;
+}
+
+.chat-list-style{
+  background-color: #F5F5F5;
+
+  overflow-y: scroll;
+  scrollbar-width: thin !important;
+}
+.message-div-to-make-it-flex{
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: start !important;
+}
+
+.message-div-to-make-it-flex-me{
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: end;
+}
+@media (max-width: 600px) {
+  .message-div-to-make-it-flex-me,
+  .message-div-to-make-it-flex {
+      display: block;
+      /* Add any other mobile-specific styles */
+  }
+}
+.align-message-right{
+   justify-content: end;
+}
+.align-message-left{
+  justify-content: start;
+}
+.skeleton-empty-chat{
+margin-top: 20px;
+background-color:#8ea490;
+max-height: 870px;
+width: 40%;
+opacity: 0.6;
+border-radius: 15px;
+
+}
+.rebeca{
+background-color: #8ea490 !important;
+} 
+
+.flex{
+display: flex;
+}
+.space-around{
+justify-content: space-around;
+}
+.space-between{
+justify-content: space-around;
+}
+.message-box{
+
+}
+.inline-div{
+display: inline-block !important;
+}
+.content-center{
+justify-content: space-evenly;
+
+}
+.content-chat-box-center{
+  align-items: center;
+  
+  }
+.message-text{
+padding-top: 2px;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+overflow-wrap: break-word !important;
+overflow: hidden !important;
+}
+
+.message-bg-primary{
+background-color: #8ea490;
+width: 200px;
+max-height: 1000px;
+border-radius: 25px;
+margin-left: 8px;
+margin-top: 12px;
+text-indent: 6%;
+}
+
+.message-bg-primary-me{
+  background-color: #b4aca3;
+  width: 200px;
+  max-height: 1000px;
+  border-radius: 25px;
+  margin-left: 8px;
+  margin-top: 12px;
+  align-self:flex-end;
+  text-indent: 6%;
+
+  }
+
+.scrollbar{
+  overflow-y: scroll;
+  scrollbar-color: #696969 #DCDCDC !important;
+  scrollbar-width: thin !important;
+}
